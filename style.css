@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Ojuju", sans-serif;
+}
+span, a, label {
+    display: inline-block;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.container {
+    padding: 25px;
+    background-color: #ddd;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.header {
+    background-color: #fff;
+    padding: 60px;
+    text-align: center;
+}
+.title {
+    margin-bottom: 12px;
+    font-size: 45px;
+}
+.lead {
+    font-size: 21px;
+}
+.nav {
+    background-color: #333;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.link {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-transform: capitalize;
+}
+.link:hover {
+    background-color: #04AA6D;
+    color: #333;
+}
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+.content {
+    width: 73%;
+}
+.aside {
+    width: 25%;
+}
+.title2 {
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.title2up {
+    text-transform: uppercase;
+}
+.box {
+    margin-bottom: 25px;
+    padding: 25px;
+    background-color: white;
+}
+.date {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.text {
+    font-size: 19px;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+.imagesbox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.footer {
+    background-color: #333;
+    color: #ddd;
+    text-align: center;
+    padding: 45px;
+    font-size: 24px;
+}
+
+@media(max-width:1000px){
+    .content {
+        width: 65%;
+    }
+    .aside {
+        width: 32%;
+    }
+}
+@media(max-width:800px){
+    .main {
+        display: block;
+    }
+    .aside, .content {
+        max-width: 600px;
+        width: auto;
+        margin: auto;
+    }
+}
+@media(max-width:500px){
+    .container {
+        padding: 15px;
+    }
+    .header, .footer {
+        padding: 25px;
+    }
+    .container > *:not(.header) {
+        margin-bottom: 15px;
+    }
+    .box {
+        margin-bottom: 15px;
+        padding: 15px;
+    }
+}
